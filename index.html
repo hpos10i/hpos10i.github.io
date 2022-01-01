@@ -84,7 +84,41 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                margin-top:-1em;
             } 
+
+            :root {
+                --width: 300px;
+                --x-speed: 13s;
+                --y-speed: 7s;
+                --transition-speed: 2.2s;
+            }
+
+            .el { 
+                /* width: var(--width); */
+                /* height: var(--width); */
+                height: 50px;   
+                z-index: 20;
+            }
+
+            .x {
+                animation: x var(--x-speed) linear infinite alternate;
+            }
+            .y {
+                animation: y var(--y-speed) linear infinite alternate;
+            }
+
+            @keyframes x {
+            100% {
+                transform: translateX(calc(100vw - var(--width)));
+            }
+            }
+            @keyframes y {
+            100% {
+                transform: translateY(calc(100vh - var(--width)));
+            }
+            }
+
 
         </style>
         <script>
@@ -131,6 +165,9 @@
             </div>
         </div>
         <div class="content-area">
+            <div class="el-wrap x">
+                <img class="el y" src="funny-pictures/snitch.gif"></img>
+            </div>
             <h1 id="HarryPotterObamaSonic10Inu" >The Harry Potter Obama Sonic 10 Inu (Ticker:BITCOIN) Project</h1>
             <p>
                 BSC Token Contract: 0x4c769928971548eb71a3392eaf66bedc8bef4b80
@@ -292,7 +329,7 @@ Harry Potter solves the centralization problem (takes down corrupt schools and g
 
 	 <h2 id="Team">Team</h2>
 	 <img src="funny-pictures/team.jpg" style="width: 100%;">
-
+            
      <hr/>
 	 <h2 id="NFTS">NFTs </h2>
 
