@@ -47,7 +47,7 @@ html, * {
 body {
   xmargin: 0;
   color: var(--fore-color);
-  background: var(--back-color);
+  xbackground: var(--back-color);
 }
 
 details {
