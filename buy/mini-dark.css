@@ -243,7 +243,7 @@ a:hover, a:focus {
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
-  flex-flow: row wrap;
+  xflex-flow: row wrap;
 }
 
 .col-sm,

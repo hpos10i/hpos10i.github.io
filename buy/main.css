@@ -106,7 +106,7 @@ a, button, input, select {
   border-radius: 8px;
   margin: var(--universal-margin);
   padding:4px;
-  overflow: hidden;
+  xoverflow: hidden;
 
 }
 
@@ -119,6 +119,7 @@ a, button, input, select {
   align-self: center;
   position: relative;
   width: 80%;
+  height: 100%;
   xbackground: var(--card-back-color);
 
 	 xbackground: rgba(0,0,0,0.1);
@@ -126,7 +127,7 @@ a, button, input, select {
   xborder: 0.0625rem solid var(--card-border-color);
   border-radius: var(--universal-border-radius);
   margin: var(--universal-margin);
-  overflow: hidden;
+  xoverflow: hidden;
 
 }
 .rain2 {
@@ -163,3 +164,6 @@ h3{
   padding: 4px;
 }
 
+.marginD{
+    padding-bottom:10px;
+}
